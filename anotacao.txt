@@ -1,0 +1,89 @@
+o que é escopo no javaScript = 
+
+* Local scope
+* Global scope
+* function scope 
+
+JavaScript cada função cria um escopo,
+Os escopos determina a acessibilidade/visibilidade das variaveis,
+variaveis define as funções dentro que nao sao visiveis do lado de fora.
+
+ 
+scope chain
+hoist
+
+
+ 
+programas para estudar react 
+programa para estudar vue
+
+
+livros javaScript o guia definitivo, (mozilla, ecma)
+
+
+
+
+abrir o terminal no visual studio code
+
+primeiro codigo colocar == node
+
+ex.
+
+var n1 = 1545.5
+
+n1.tofixed(2)
+1545.50 (duas casas depois da virgula)
+
+n1.tofixed(2).replace('.',',')
+1545,50 (vai mudar o ponto por virgula)
+
+n1.tolocaleString ('pt-br',{style: 'currency,currency: 'brl'})
+R$ 1,545.50 (esse comando vai tranformar em dinheiro pra colocar em dola apenas por usd no lugar do brl)
+
+n1.tolacaleString('pt-br', {style: 'currency', currency: 'USD'})
+US$ 1,545.50
+
+
+
+Uso do DOM = document objecto model 
+
+selecionando;
+
+Por Marcas : getElementsByTagName() selecionar mais de um obejtos
+Por ID :  getElementById() 
+Por Nome : getElementByName
+Por Classe : getElementByClassName
+Pro Seletor : querySelector() querySelectorAll()
+
+**quando for o selector o usao sera
+
+<div id="msg"> Azideia </div>
+
+<script> var d = window.document.querySelector('div#msg') 
+
+
+**quando for o uso de uma classe
+
+<div class="msg"> Azideia </div>
+
+<script> var d = window.document.querySelector('div.msg') 
+
+
+o uso do comando  window.alert(p1.innertext) ou window.alert(p1.innerHTML)
+innertext = pega o texto sem a formaçao correta
+innerHTML = pega toda a formataçao imposta no comando
+
+
+
+
+
+
+//---------------------------------------------------------------------------
+
+JavaScript na pagina 
+
+primeiro passo procurar o arquivo usando essa função:
+document.querySelector('') // ira acessar qual parte da pagina entre ('')
+
+
+

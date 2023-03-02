@@ -1,0 +1,60 @@
+docker run ps ou docker run ps -a 
+docker container ls ou docker container ls -a (-a significa ver o historico do que ja foi feito)
+
+*docker ps -a
+container id -- imagem -- command -- created -- status -- ports -- names
+1615634101503 -- ubuntu -- "bash" -- 2 minutos -- exited --     -- algumNome
+
+*docker run ubuntu sleep 1d (travar por 1 dia o ubuntu(imagem))
+
+container id -- imagem -- command -- created -- status -- ports -- names
+1615634101503 -- ubuntu -- "sleep 1d" -- 2 minutos -- exited --     -- algumNome
+
+
+quando quiser parar o command como no exemplo do sleep 1d
+
+*docker stop 1615634101503  ou *docker stop algumNome
+
+quando voltar ao comando docker ps nao vai ter mais o container
+
+container id -- imagem -- command -- created -- status -- ports -- names
+
+***para voltar a mexer no container 
+
+*docker start 1615634101503 ou docker start algumNome
+*docker ps
+
+container id -- imagem -- command -- created -- status -- ports -- names
+1615634101503 -- ubuntu -- "sleep 1d" -- 2 minutos -- exited --     -- algumNome
+
+para interagir 
+*docker exec -it 1615634101503 bash ou docker exec -it algumNome bash
+
+
+docker pause 1615634101503
+docker unpause 1615634101503
+
+
+docker rm 1615634101503  ( vai remover )
+
+docker run ubuntu sleep 1d (exemplo)
+outra forma de escrever esse exemplo seria:
+docker run -it ubuntu bash
+
+
+
+docker run -d (para nao travar),(mais o nome da imagem)
+download 
+
+
+docker rm 4c552a5d988 --force  (vai forçar a parada)
+
+
+docker -d -P 4c552a5d988
+
+docker port 4c552a5d988
+
+
+
+
+
